@@ -1,0 +1,23 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Starting build process for FastAPI demo"
+    build:
+      commands:
+        - echo "Building static site"
+        - echo "FastAPI files prepared for reference"
+    postBuild:
+      commands:
+        - echo "Build completed successfully"
+  artifacts:
+    baseDirectory: .
+    files:
+      - index.html
+      - main.py
+      - app.py
+      - requirements.txt
+      - Dockerfile
+      - docker-compose.yml
+      - README.md
